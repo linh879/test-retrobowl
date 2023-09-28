@@ -85,7 +85,7 @@
     </div>
 
     <!-- Ad Container -->
-    <div id="adContainer" style="width: 728px; height: 90px; background-color: #f0f0f0; position: relative;">
+    <div id="adContainer" style="width: 728px; height: 90px; background-color: #f0f0f0; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
         <!-- Ad Close Button -->
         <button id="closeAdButton" style="position: absolute; top: 0; right: 0; padding: 5px; background-color: #ccc;">Close Ad</button>
         <!-- <!-- /22874444475/728x90 -->
@@ -93,7 +93,7 @@
   <script>
     googletag.cmd.push(function() { googletag.display('div-gpt-ad-1695912354845-0'); });
   </script>
-</div> -->
+</div>
         <!-- Example: <img src="your-ad-image.png" alt="Your Ad" /> -->
     </div>
 
@@ -101,7 +101,7 @@
     <script type="text/javascript" src="html5game/RetroBowl.js?WAEAC=1633155445"></script>
     <script>
         window.onload = GameMaker_Init;
-        
+
         // JavaScript to close the ad when the close button is clicked
         document.getElementById('closeAdButton').addEventListener('click', function() {
             var adContainer = document.getElementById('adContainer');
@@ -109,5 +109,6 @@
         });
     </script>
 </body>
+
 
 </html>
