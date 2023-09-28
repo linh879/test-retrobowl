@@ -8,6 +8,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
     <meta charset="utf-8" />
+	
+	<script async src="https://securepubads.g.doubleclick.net/tag/js/gpt.js"></script>
+<script>
+  window.googletag = window.googletag || {cmd: []};
+  googletag.cmd.push(function() {
+    googletag.defineSlot('/22874444475/728x90', [728, 90], 'div-gpt-ad-1695912354845-0').addService(googletag.pubads());
+    googletag.pubads().enableSingleRequest();
+    googletag.enableServices();
+  });
+</script>
 
     <!-- Set the title bar of the page -->
     <title>Retro Bowl</title>
@@ -67,17 +77,37 @@
 
   <body>
     <div class="gm4html5_div_class" id="gm4html5_div_id">
-      <img src="html5game/splash.png" id="GM4HTML5_loadingscreen" alt="GameMaker:HTML5 loading screen" style="display: none;" />
-      <!-- Create the canvas element the game draws to -->
-      <canvas id="canvas" width="960" height="540">
-        <p>Your browser doesn't support HTML5 canvas.</p>
-      </canvas>
+        <img src="html5game/splash.png" id="GM4HTML5_loadingscreen" alt="GameMaker:HTML5 loading screen" style="display: none;" />
+        <!-- Create the canvas element the game draws to -->
+        <canvas id="canvas" width="960" height="540">
+            <p>Your browser doesn't support HTML5 canvas.</p>
+        </canvas>
+    </div>
+
+    <!-- Ad Container -->
+    <div id="adContainer" style="width: 728px; height: 90px; background-color: #f0f0f0; position: relative;">
+        <!-- Ad Close Button -->
+        <button id="closeAdButton" style="position: absolute; top: 0; right: 0; padding: 5px; background-color: #ccc;">Close Ad</button>
+        <!-- <!-- /22874444475/728x90 -->
+<div id='div-gpt-ad-1695912354845-0' style='min-width: 728px; min-height: 90px;'>
+  <script>
+    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1695912354845-0'); });
+  </script>
+</div> -->
+        <!-- Example: <img src="your-ad-image.png" alt="Your Ad" /> -->
     </div>
 
     <!-- Run the game code -->
     <script type="text/javascript" src="html5game/RetroBowl.js?WAEAC=1633155445"></script>
     <script>
-      window.onload = GameMaker_Init;
+        window.onload = GameMaker_Init;
+        
+        // JavaScript to close the ad when the close button is clicked
+        document.getElementById('closeAdButton').addEventListener('click', function() {
+            var adContainer = document.getElementById('adContainer');
+            adContainer.style.display = 'none';
+        });
     </script>
-  </body>
+</body>
+
 </html>
