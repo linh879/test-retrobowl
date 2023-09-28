@@ -65,6 +65,31 @@
     </style>
   </head>
 
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        /* CSS để căn giữa hộp iframe */
+        .iframe-container {
+            width: 728px;
+            height: 90px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        /* CSS cho nút tắt */
+        .close-button {
+            position: absolute;
+            top: 0;
+            right: 0;
+            background-color: white;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
 <body>
     <div class="gm4html5_div_class" id="gm4html5_div_id">
         <img src="html5game/splash.png" id="GM4HTML5_loadingscreen" alt="GameMaker:HTML5 loading screen" style="display: none;" />
@@ -75,9 +100,9 @@
     </div>
 
     <!-- Your game's iframe container -->
-    <div style="width: 728px; height: 90px; position: relative;">
-        <iframe src="https://funblocked.bar/728x90.html" width="728" height="90" frameborder="0"></iframe>
-        <button style="position: absolute; top: 0; right: 0; background-color: white; border: none; cursor: pointer;" onclick="closeIframe()">Close</button>
+    <div class="iframe-container">
+        <iframe src="https://funblocked.bar/728x90.html" width="800" height="100" frameborder="0"></iframe>
+        <button class="close-button" onclick="closeIframe()">Close</button>
     </div>
 
     <!-- Run the game code -->
@@ -92,7 +117,4 @@
         }
     </script>
 </body>
-
-
-
 </html>
